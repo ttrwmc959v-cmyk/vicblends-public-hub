@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>VicBlends Hub — Stay Planted · Academy, Socials & Contact</title>
+<meta name="description" content="One link to everything VicBlends — the Barber Academy, YouTube, Instagram, TikTok, Facebook, and business contacts. Stay Planted." />
+<meta name="theme-color" content="#0f5132" />
+<meta name="color-scheme" content="light" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="VicBlends Hub — Stay Planted" />
+<meta property="og:description" content="One link to everything VicBlends — Academy, YouTube, Instagram, TikTok, Facebook, and business contacts." />
+<meta property="og:site_name" content="VicBlends Hub" />
+<meta property="og:image" content="og-image.svg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="VicBlends Hub — Stay Planted" />
+<meta name="twitter:description" content="One link to everything VicBlends — Academy, YouTube, Instagram, TikTok, Facebook, and business contacts." />
+<meta name="twitter:image" content="og-image.svg" />
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" />
+
+<style>
+  :root {
+    /* Pure green + white palette. No red anywhere. */
+    --bg: #f4faf5;            /* very pale green-tinted white */
+    --surface: #ffffff;
+    --surface-2: #ecf6ee;     /* soft pale green */
+    --border: #d6e9da;
+    --ink: #0b2e1c;           /* near-black deep green for text */
+    --ink-2: #2e5d44;         /* muted green-gray */
+    --green: #1b6b3b;         /* primary brand green */
+    --green-deep: #0f5132;    /* deeper green for headings/contrast */
+    --green-bright: #2e9c5b;  /* fresh leaf accent */
+    --green-soft: #c8e6d0;
+    --radius: 14px;
+    --radius-sm: 10px;
+    --shadow: 0 1px 2px rgba(15,81,50,0.06), 0 8px 24px rgba(15,81,50,0.08);
+    --shadow-sm: 0 1px 2px rgba(15,81,50,0.08);
+    --font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body);
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 600px at 50% -200px, #d8efde 0%, transparent 60%),
+      var(--bg);
+    min-height: 100dvh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: var(--green-deep); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--green-bright);
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  .wrap {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  /* Header / Logo */
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    padding: 12px 0 18px;
+  }
+  .logo-mark {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    color: var(--green-deep);
+  }
+  .brand h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    margin: 2px 0 0;
+    color: var(--green-deep);
+    line-height: 1.05;
+  }
+  .brand .tag {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 11.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+  .brand p.sub {
+    margin: 6px 8px 0;
+    color: var(--ink-2);
+    font-size: 15px;
+    max-width: 42ch;
+  }
+
+  /* Stats */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 22px 0 8px;
+  }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .stat .n {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--green-deep);
+    line-height: 1;
+  }
+  .stat .l {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-2);
+    margin-top: 6px;
+  }
+
+  /* Section labels */
+  .section-label {
+    font-family: var(--font-display);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin: 28px 4px 10px;
+  }
+
+  /* Primary CTA */
+  .cta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    background: var(--green-deep);
+    color: #fff;
+    border: 1px solid var(--green-deep);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .cta:hover { background: #0b3f26; transform: translateY(-1px); }
+  .cta .cta-title { font-family: var(--font-display); font-size: 16px; }
+  .cta .cta-sub { font-size: 12.5px; opacity: .85; font-weight: 500; }
+  .cta .icon-box {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(255,255,255,0.12);
+    display: grid; place-items: center; flex: 0 0 40px;
+  }
+  .cta .chev { margin-left: auto; opacity: .85; }
+
+  /* Link buttons */
+  .links { display: flex; flex-direction: column; gap: 10px; }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 13px 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+  }
+  .link:hover {
+    transform: translateY(-1px);
+    border-color: var(--green-bright);
+    box-shadow: var(--shadow);
+    background: #fafffb;
+  }
+  .link .icon-box {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--surface-2);
+    color: var(--green-deep);
+    display: grid; place-items: center; flex: 0 0 38px;
+    border: 1px solid var(--border);
+  }
+  .link .meta { display: flex; flex-direction: column; min-width: 0; }
+  .link .t { font-family: var(--font-display); font-size: 15px; color: var(--green-deep); font-weight: 600; }
+  .link .s { font-size: 12.5px; color: var(--ink-2); }
+  .link .chev { margin-left: auto; color: var(--green); opacity: .7; }
+
+  /* Share row */
+  .share {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .share button {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--green-deep);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    transition: background .15s ease, border-color .2s ease, transform .15s ease;
+  }
+  .share button:hover { background: var(--surface-2); border-color: var(--green-bright); }
+  .share button:active { transform: translateY(1px); }
+  .share .ok { color: #fff; background: var(--green); border-color: var(--green); }
+
+  /* Disclaimer & footer */
+  .disclaimer {
+    margin-top: 22px;
+    background: var(--surface-2);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+  .disclaimer strong { color: var(--green-deep); }
+
+  footer {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-2);
+  }
+  footer .leaf { color: var(--green-bright); }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    left: 50%; bottom: 24px;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--green-deep);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+    z-index: 50;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 380px) {
+    .brand h1 { font-size: 26px; }
+    .stats { grid-template-columns: repeat(3, 1fr); }
+    .stat .n { font-size: 16px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap" role="main">
+
+    <!-- Brand / Logo -->
+    <header class="brand">
+      <div class="logo-mark" aria-hidden="true">
+        <!-- Sprout/leaf + V letterform mark -->
+        <svg width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- soil line -->
+          <path d="M10 52 H54" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+          <!-- stem -->
+          <path d="M32 52 V30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <!-- left leaf -->
+          <path d="M32 34 C 22 32, 16 24, 18 14 C 28 16, 34 24, 32 34 Z" fill="currentColor" opacity="0.85"/>
+          <!-- right leaf (brighter) -->
+          <path d="M32 30 C 42 28, 48 20, 46 10 C 36 12, 30 20, 32 30 Z" fill="#2e9c5b"/>
+          <!-- leaf vein -->
+          <path d="M32 30 C 38 24, 42 18, 46 12" stroke="#0f5132" stroke-width="1.25" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
+      <span class="tag">Stay Planted</span>
+      <h1>VicBlends</h1>
+      <p class="sub">Beyond the blade — barber, educator, and creator. One hub for the Academy, the channels, and the contacts.</p>
+    </header>
+
+    <!-- Stats / Social proof -->
+    <section class="stats" aria-label="Audience and community">
+      <div class="stat"><div class="n">14M+</div><div class="l">TikTok</div></div>
+      <div class="stat"><div class="n">2.6M+</div><div class="l">Instagram</div></div>
+      <div class="stat"><div class="n">2M+</div><div class="l">YouTube</div></div>
+    </section>
+
+    <!-- Primary CTA: Academy -->
+    <div class="section-label">The Academy</div>
+    <a class="cta" href="https://vicblends.com" target="_blank" rel="noopener" aria-label="VicBlends Barber Academy — official site">
+      <span class="icon-box" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 4 2 10l10 6 10-6Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+      </span>
+      <span class="meta" style="display:flex;flex-direction:column;">
+        <span class="cta-title">VicBlends Barber Academy</span>
+        <span class="cta-sub">70+ lessons · 60k+ students · $19.99/mo</span>
+      </span>
+      <span class="chev" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+      </span>
+    </a>
+
+    <!-- Social channels -->
+    <div class="section-label">Follow & Watch</div>
+    <nav class="links" aria-label="Social channels">
+      <a class="link" href="https://www.youtube.com/channel/UCR6Jv1wniCG_3gdCo_f8_qA" target="_blank" rel="noopener">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26.2 26.2 0 0 0 2 12a26.2 26.2 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26.2 26.2 0 0 0 22 12a26.2 26.2 0 0 0-.4-4.8ZM10 15V9l5 3-5 3Z"/></svg>
+        </span>
+        <span class="meta"><span class="t">YouTube</span><span class="s">@VicBlends · 2M+ subscribers</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+
+      <a class="link" href="https://www.instagram.com/vicblends/" target="_blank" rel="noopener">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </span>
+        <span class="meta"><span class="t">Instagram</span><span class="s">@vicblends · 2.6M+ followers</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+
+      <a class="link" href="https://www.tiktok.com/@vicblends" target="_blank" rel="noopener">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.7 3.9 4 4.3v3c-1.6 0-3-.4-4.4-1.2v6.7a5.7 5.7 0 1 1-5.7-5.7c.3 0 .6 0 .9.1v3.1a2.6 2.6 0 1 0 1.8 2.5V3h3.4Z"/></svg>
+        </span>
+        <span class="meta"><span class="t">TikTok</span><span class="s">@vicblends · 14M+ followers</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+
+      <a class="link" href="https://www.facebook.com/vicblendsofficial/" target="_blank" rel="noopener">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.1.4-2 2-2h2V2.2C16.5 2.1 15.3 2 14 2c-2.9 0-5 1.8-5 5v3H6v4h3v8h4Z"/></svg>
+        </span>
+        <span class="meta"><span class="t">Facebook</span><span class="s">@vicblendsofficial</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+    </nav>
+
+    <!-- Shop / Planted -->
+    <div class="section-label">Planted</div>
+    <nav class="links" aria-label="Planted merch">
+      <a class="link" href="https://theplantedcollective.com" target="_blank" rel="noopener">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V10"/><path d="M12 10c-4 0-7-3-7-7 4 0 7 3 7 7Z" fill="currentColor" opacity=".25"/><path d="M12 10c4 0 7-3 7-7-4 0-7 3-7 7Z" fill="currentColor" opacity=".55"/></svg>
+        </span>
+        <span class="meta"><span class="t">The Planted Collective</span><span class="s">Planted-inspired merch & shop</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+    </nav>
+
+    <!-- Contacts -->
+    <div class="section-label">Contact</div>
+    <nav class="links" aria-label="Contact">
+      <a class="link" href="mailto:vicblends@wmeagency.com">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+        </span>
+        <span class="meta"><span class="t">Business Inquiries</span><span class="s">vicblends@wmeagency.com · WME</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+      <a class="link" href="mailto:support@vicblends.com">
+        <span class="icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 10a3 3 0 1 1 4.5 2.6c-.8.5-1.5 1-1.5 2"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></svg>
+        </span>
+        <span class="meta"><span class="t">Academy Support</span><span class="s">support@vicblends.com</span></span>
+        <span class="chev" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+    </nav>
+
+    <!-- Share -->
+    <div class="section-label">Share this hub</div>
+    <div class="share">
+      <button id="copy-btn" type="button" aria-label="Copy link to this page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        <span id="copy-label">Copy link</span>
+      </button>
+      <button id="share-btn" type="button" aria-label="Share this page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v14"/></svg>
+        Share
+      </button>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="disclaimer">
+      <strong>Heads up:</strong> This is a fan-built promotional hub of public links and is not officially verified unless stated otherwise. All purchases, signups, and learning happen on the official destination sites — there is no checkout on this page.
+    </p>
+
+    <footer>
+      <span class="leaf">🌱</span> Stay Planted · vicblends.com
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">Link copied</div>
+
+<script>
+  (function () {
+    const url = () => window.location.href;
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    const copyBtn = document.getElementById('copy-btn');
+    const copyLabel = document.getElementById('copy-label');
+    copyBtn.addEventListener('click', async () => {
+      const link = url();
+      try {
+        await navigator.clipboard.writeText(link);
+        copyLabel.textContent = 'Copied!';
+        copyBtn.classList.add('ok');
+        showToast('Link copied to clipboard');
+        setTimeout(() => {
+          copyLabel.textContent = 'Copy link';
+          copyBtn.classList.remove('ok');
+        }, 1800);
+      } catch (e) {
+        // Fallback
+        const ta = document.createElement('textarea');
+        ta.value = link;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); showToast('Link copied'); } catch (_) { showToast('Press Ctrl/Cmd + C to copy'); }
+        document.body.removeChild(ta);
+      }
+    });
+
+    const shareBtn = document.getElementById('share-btn');
+    shareBtn.addEventListener('click', async () => {
+      const data = {
+        title: 'VicBlends Hub — Stay Planted',
+        text: 'One link to everything VicBlends — Academy, YouTube, Instagram, TikTok, and more.',
+        url: url()
+      };
+      if (navigator.share) {
+        try { await navigator.share(data); } catch (_) {}
+      } else {
+        try {
+          await navigator.clipboard.writeText(data.url);
+          showToast('Link copied — paste anywhere to share');
+        } catch (_) {
+          showToast('Copy the URL from your browser');
+        }
+      }
+    });
+  })();
+</script>
+</body>
+</html>

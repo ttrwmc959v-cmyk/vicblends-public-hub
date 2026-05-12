@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4faf5"/>
+      <stop offset="1" stop-color="#d8efde"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g transform="translate(600 240)">
+    <g transform="translate(-72 -72)">
+      <rect x="0" y="0" width="144" height="144" rx="36" fill="#ffffff" stroke="#d6e9da"/>
+      <g transform="translate(36 36)">
+        <path d="M36 60 V36" stroke="#0f5132" stroke-width="4" stroke-linecap="round"/>
+        <path d="M36 40 C 24 38, 18 28, 20 16 C 32 18, 38 28, 36 40 Z" fill="#0f5132" opacity="0.85"/>
+        <path d="M36 36 C 48 34, 54 24, 52 12 C 40 14, 34 24, 36 36 Z" fill="#2e9c5b"/>
+      </g>
+    </g>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Space Grotesk, Inter, sans-serif" font-weight="700" font-size="96" fill="#0b2e1c" letter-spacing="-1">VicBlends</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Space Grotesk, Inter, sans-serif" font-weight="600" font-size="28" fill="#1b6b3b" letter-spacing="6">STAY PLANTED</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Inter, sans-serif" font-weight="500" font-size="24" fill="#2e5d44">Academy · YouTube · Instagram · TikTok · Facebook</text>
+</svg>
